@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test Score Array</title>
+    <link rel="stylesheet" href="styles.css" />
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>	
+   
+</head>
+<body>
+    
+<!--Open the HTML and JavaScript files attached as starter files (index.html and test_scores.js) from the test_scores folder.  Then, run the application to see the user interface shown above, although that interface won’t do anything until you develop the JavaScript for it.
+
+In the JavaScript file, you’ll see some starting code, including the declarations for two arrays. The names array contains four names, and the scores array contains four scores. This assumes that the four scores correspond to the four names. For instance, the first score is for the first name and the last score is for the last name.
+
+Write an event handler for the click event of the Display Results button that uses a loop to calculate the average score for the four elements in the scores array. The handler should then display the average score in the text area element, as shown in the above screenshot.
+
+Enhance the code for the event handler so it also calculates and displays the high score and low score for the four elements in the array, as shown in the above screenshot.
+Enhance the code for the event handler so it displays the names and scores of the elements in the arrays, as shown in the above screenshot.
+
+Write an event handler for the click event of the Add to Array button that adds the user entries for name and score to the end of the names and scores arrays and then clears the entries from the text boxes. When you test this addition, make sure that the Display Results button still works correctly.
+
+If you haven’t already done it, add data validation to the event handler for the Add to Array button. The Name entry must not be empty and the Score entry must be a positive number from 0 through 100. If either entry is invalid, use the alert method to display this error message: “You must enter a name and a valid score”.
+Make sure that your application moves the cursor to the Name field when the application starts and after a name and score has been added to the array.
+
+-->
+<section>
+    <h1>Use a Test Score array</h1>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br>
+        
+    <label for="score">Score:</label>
+    <input type="text" id="score"><br>
+    
+    <label>&nbsp;</label>
+	<input type="button" id="add" value="Add to Array" >
+	<input type="button" id="displayResults" value="Display Results" ><br>
+	
+    <h2>Results</h2>
+    <textarea id="results">&nbsp;</textarea>
+    <table id="scores_table"></table>
+	<div id="error_message"></div>
+</section>
+</body> <script src="test_scores.js"></script>
+</html>

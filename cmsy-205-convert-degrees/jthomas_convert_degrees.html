@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Convert F degrees to C degrees</title>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<script>
+		var entry;
+		do {
+			entry = prompt("Enter degrees in Fahrenheit\n" +
+			               "Or enter 999 to end entries", 999);
+			entry = parseInt(entry);
+            // convert a Fahrenheit temperature to Celsius, you subtract 32 from the Fahrenheit degrees and multiply that result by 5/9.
+			if (entry != 999) {
+              cDegree = (entry - 32) * (5/9);
+             alert("Fahrenheit = " + entry + "\nCelsius = " + cDegree);
+             }
+          else {
+            alert("Goodbye.");
+            }
+            
+		}
+		while (entry != 999);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>

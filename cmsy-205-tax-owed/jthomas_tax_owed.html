@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Display tax owed</title>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<script>
+        //Jamie Lee Thomas Kerig
+		var tax_owed = 0;
+		var entry;
+		
+		do {
+			entry = prompt("Enter taxable income as a valid number\n" +
+			               "Or enter 99999 to end entries", 99999);
+			entry = parseInt(entry);
+			
+			// calculate the tax owed here
+            
+			if (entry < 0){
+			alert("Please enter another number.");
+                
+		}else if (entry >= 0 && entry <= 8700){
+			tax_owed =  entry *.1;
+            
+		}else if(entry > 8700 && entry <= 35350){
+            
+			tax_owed = (entry - 8700)*.15 + 870;
+            
+		}else if(entry > 35350 && entry <= 85650){
+            
+			tax_owed = (entry - 35350)*.25 + 4867;
+            
+		}else if(entry > 85650 && entry <= 178650){
+            
+			tax_owed = (entry - 85650)*.28 + 85650;
+            
+		}else if(entry > 178650 && entry <= 388350){
+            
+			tax_owed = (entry - 178650)*.33 + 43482;
+            
+		}else{
+			tax_owed = (entry - 388350)*.35 +112683;
+		}
+			alert("Tax owed is $" + tax_owed);
+		}
+		while (entry != 99999);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>
