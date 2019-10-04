@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Make Change</title>
+   	<link rel="stylesheet" href="styles.css">
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>	
+    <script src="make_change.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--
+
+In this exercise, you’ll develop an application that tells how many quarters, dimes, nickels, and pennies are needed to make change for any amount of change from 0 through 99 cents. 
+
+One way to get the results is to use the divide and modulus operators along with the parseInt() method for truncating the results so they are whole numbers.
+
+In the JavaScript file, write the code for returning the right coins for the change amount that the user enters when the user clicks on the Calculate button.
+
+When you get that working right, add JavaScript code that disables the four text boxes that display the results by setting their disabled properties to true (disabled=true).
+-->
+    
+    
+<section>
+    <h1>Change Calculator</h1>
+
+    <label>Enter amount of change due (0-99):</label>
+    <input type="text" id="cents" />
+    <input type="button" value="Make Change" name="calculate" id="calculate" /><br><br>
+
+    <label>Quarters:</label>
+    <input type="text" id="quarters"><br>
+					
+    <label>Dimes:</label>
+    <input type="text" id="dimes"><br>
+	
+    <label>Nickels:</label>
+    <input type="text" id="nickels"><br>
+		
+    <label>Pennies:</label>
+    <input type="text" id="pennies"><br>
+<!-- whoo!! i did it!! -->
+</section>
+</body>
+</html>
