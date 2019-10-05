@@ -4,21 +4,26 @@
 	<meta charset="utf-8">
     <title>FAQs</title>
 	<link rel="stylesheet" href="main.css">
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
    	<script src="faqs.js"></script>   	
 </head>
-
+<!--
+This exercise has you make a minor modification to the FAQs application in chapter 6.  When you’re done, this application should work the same as before, except that only one answer can be displayed at a time.  In other words, when the user clicks on a heading to display the answer, the other answers must be hidden.  This takes just a few more lines of code, but you have to think it through.
+ 
+Rewrite the code in the JavaScript file so only one answer can be displayed at a time.  Modify the FAQs application.
+--->
 <body>
 	<section id="faqs">
 		<h1>jQuery FAQs</h1>
 		<h2><a href="#" id="first_link">What is jQuery?</a></h2>
-		<div>
+		<div class="toggle-area">
 			<p>jQuery is a library of the JavaScript functions that you're most likely 
 			   to need as you develop web sites.
 			</p>
 		</div>
 		<h2><a href="#">Why is jQuery becoming so popular?</a></h2>
-		<div>
+		<div class="toggle-area">
 			<p>Three reasons:</p>
 			<ul>
 				<li>It's free.</li>
@@ -27,7 +32,7 @@
 			</ul>
 		</div>
 		<h2><a href="#">Which is harder to learn: jQuery or JavaScript?</a></h2>
-		<div>
+		<div class="toggle-area">
 			<p>For most functions, jQuery is significantly easier to learn 
 			    and use than JavaScript. But remember that jQuery is JavaScript.
 			</p>
