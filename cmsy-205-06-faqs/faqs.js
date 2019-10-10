@@ -61,7 +61,11 @@ var $ = function (id) {
 //jquery only
 
 $(document).ready(function(){
+    
     $('#faqs h2').click(function(){
-        $(this).next('.content').toggle();
+        $(this).next('.toggle-area').show();
+        $(".toggle-area").not($(this).next()).hide();
+ //omg i got it :sob: hallelujah
     })
+    
 });
