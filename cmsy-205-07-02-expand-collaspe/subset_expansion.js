@@ -8,3 +8,4 @@ In the JavaScript file, add an event handler for the ready event method.
 Within the function for the ready event handler, code an event handler for the toggle event method of the <a> elements.
 
 The first time one of those elements is clicked, the event handler should display the text in the division above that element, and it should change the text for the link from “Show more” to “Show less”. The second time an <a> element is clicked, the event handler should hide the text in the division above that element, and it should change the text for the link from “Show less” to “Show more”. */
+

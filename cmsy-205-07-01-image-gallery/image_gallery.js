@@ -9,3 +9,12 @@ Add an event handler for the click event of each link. The function for this eve
 
 Add a jQuery statement that moves the focus to the first link on the page when the page is loaded.
 */
+
+"use strict";
+var $ = function(id) {return document.getElementById(id); };
+window.onload = function() {
+    
+    
+    
+    
+};
