@@ -10,7 +10,7 @@ You can get the URL from the href attribute of the <a> element, and you can get 
 
 5. Add a jQuery statement that moves the focus to the first link on the page when the page is loaded.
 
-https://dzone.com/articles/using-the-jquery-each-function
+ 
 */
 
  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average Test Scores</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    
+<!--Problem-1: Enhance the Test Scores application (25 points)
+
+In this problem, you’ll enhance the Test Scores application of figure 2-17 so it displays not only the average test score but the best test score as shown in the dialog box below.
+
+Open the HTML file (test_scores.html).  Then, run the application to refresh your memory about how it works.
+Declare a variable named bestScore and assign it a starting value of zero.
+For each valid user entry, compare the entry with the value in bestScore.  If the user entry is greater than the value in bestScore, set the bestScore variable equal to the user entry, because it is now the best score.
+Add to the alert statement at the end of this application so it displays the best score in the dialog box as shown above.-->
+    
+	<script>
+		var total = 0;
+		var entryCount = 0;
+		var entry;
+		
+		do {
+			entry = prompt("Enter test score\n" +
+			               "Or enter 999 to end entries", 999);
+			entry = parseInt(entry);
+			if (entry >= 0 && entry <= 100) {
+				total = total + entry;	
+				entryCount++;
+			}
+			else if (entry != 999){
+				alert("Entry must by a valid number from 0 through 100\n" +
+					  "Or enter 999 to end entries");					
+			}
+		}
+		while (entry != 999);
+			
+		var average = total/entryCount;
+		average = parseInt(average);
+		alert("Average score is " + average);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>

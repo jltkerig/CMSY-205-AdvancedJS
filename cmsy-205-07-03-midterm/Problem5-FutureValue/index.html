@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Future Value Calculator</title>
+    	<link rel="stylesheet" href="future_value.css">
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<script src="future_value.js"></script>
+</head>
+<!--
+Problem-5: Redo a Future Value application with jQuery (25 points)
+
+In this problem, you’ll rewrite the code for a Future Value application that uses JavaScript with jQuery.  That will show you how jQuery can simplify an application, but also that JavaScript is still needed with jQuery applications.
+
+FutureValueApplication-jQuery.gif
+
+Open the HTML and JavaScript files provided as startup files.  Then, run the application to refresh your memory about how it works.
+Add a script element to the HTML file that gives you access to the jQuery library.
+Rewrite the code in the JavaScript file so it uses as much jQuery as possible. That includes the code for the ready and click event methods.
+When you have the application working right, add a JavaScript statement that moves the focus to the Investment Amount text box each time the Calculate button is clicked.
+-->
+<body>
+    <section>
+        <h1 id="heading">Future Value Calculator</h1>
+        
+        <label for="investment">Investment Amount:</label>
+        <input type="text" id="investment"><br>
+        
+        <label for="rate">Annual Interest Rate:</label>
+        <input type="text" id="rate"><br>
+        
+        <label for="years">Number of Years:</label>
+        <input type="text" id="years"><br>
+        
+        <label for="future_value">Future Value:</label>
+        <input type="text" id="future_value" disabled="disabled"><br>
+        
+        <label>&nbsp;</label>
+        <input  type="button" id="calculate" value="Calculate"><br>
+    </section>
+</body>
+</html>

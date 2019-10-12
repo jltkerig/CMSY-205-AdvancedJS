@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Future Value Calculator</title>
+    	<link rel="stylesheet" href="future_value.css">
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<script src="future_value.js"></script>
+</head>
+<!--
+
+Problem-2: Enhance a Future Value application (25 points)
+
+In this problem, you’ll add three enhancements to a Future Value application.  All three are relatively easy, but the third one may take some time since it requires more code.
+ 
+
+Open the HTML and JavaScript files provided as startup files.  Then, run the application to see how it works, especially the data validation.
+Add an event handler for the dblclick event of the Rate text box that clears that text box.
+Enhance the future value calculation so interest is compounded monthly instead of yearly.
+Enhance the data validation code so it displays the error messages in the span elements that follow the text boxes.  These messages should be removed when the related fields are valid.  Do this one field at a time, starting from the top.
+
+-->
+<body>
+    <section>
+        <h1 id="heading">Future Value Calculator</h1>
+        
+        <label for="investment">Investment Amount:</label>
+        <input type="text" id="investment"><br>
+        
+        <label for="rate">Annual Interest Rate:</label>
+        <input type="text" id="rate"><br>
+        
+        <label for="years">Number of Years:</label>
+        <input type="text" id="years"><br>
+        
+        <label for="future_value">Future Value:</label>
+        <input type="text" id="future_value" disabled="disabled"><br>
+        
+        <label>&nbsp;</label>
+        <input  type="button" id="calculate" value="Calculate"><br>
+    </section>
+</body>
+</html>

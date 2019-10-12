@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="slide_show.js"></script>
+</head>
+<!--
+
+Problem-4: Modify a Slide Show application (25 points)
+
+In this problem, you will modify the Slide Show application of figure 6-15 so it uses Previous and Next buttons instead of an interval timer to move from slide to slide.
+
+SlideShowApplication.gif
+
+Open the HTML and JavaScript files provided as startup files.  Then, run the application to see the buttons that have been added below the slides.  Note, however, that the buttons don’t work, and the slides are advancing based on an interval timer.
+In the JavaScript file, replace the interval timer with an event handler for the Next button.  That handler can use the same code for advancing the slides that the interval timer used.
+After the event handler for the Next button, add an event handler for the Previous button.  This will require a minor modification to the code that’s used for advancing the slides.  However, this requires some careful thought about how the image counter variable needs to be adjusted when going from one slide to the previous slide, especially when going from the first slide to the last slide.
+
+-->
+    
+<body>
+<section>
+    <h1>Fishing Slide Show</h1>
+    <ul id="image_list">
+        <li><a href="images/casting1.jpg" title="Casting on the Upper Kings"></a></li>
+        <li><a href="images/casting2.jpg" title="Casting on the Lower Kings"></a></li>
+        <li><a href="images/catchrelease.jpg" title="Catch and Release on the Big Horn"></a></li>
+        <li><a href="images/fish.jpg" title="Catching on the South Fork"></a></li>
+        <li><a href="images/lures.jpg" title="The Lures for Catching"></a></li>
+    </ul>
+    <h2 id="caption">Casting on the Upper Kings</h2>
+    <p>
+    	<img src="images/casting1.jpg" alt="" id="image">
+    </p>
+    <input type="button" value="Previous" name="previous" id="previous">
+    <input type="button" value="Next" name="next" id="next">
+</section>
+</body>
+</html>

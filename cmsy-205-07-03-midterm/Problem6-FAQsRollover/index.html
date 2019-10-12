@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Q &amp; A Rollovers</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="rollover.js"></script>
+</head>
+<!--
+Problem-6: Create a FAQs Rollover application (25 points)
+
+In this problem, you’ll write the jQuery code for an application that displays the answer to a question in a list of questions when the user hovers the mouse over that question.
+
+FAQsRolloverApplication.gif
+
+Open the HTML and JavaScript files provided as startup files.  
+Then, review the HTML to see that it includes an unordered list with list items that consist of an h2 element and a <p> element.  The h2 element contains a question, and the <p> element, which is hidden, contains the answer to the question.
+Add jQuery code that runs when the user moves the mouse pointer into or out of a question in the list. When the mouse pointer moves into the question, the answer should be displayed. When the mouse pointer moves out of the question, the answer should be hidden.
+-->
+<body>
+	<section>
+		<h1>jQuery FAQs</h1>
+		<ul id="faq_rollovers">
+	    	<li><h2>What is jQuery?</h2>
+	    		<p class="hidden">jQuery is a library of the JavaScript functions 
+	    		that you're most likely to need as you develop web sites.</p>
+	    	</li>
+	    	<li><h2>Why is jQuery becoming so popular?</h2>
+	    		<p class="hidden">Three reasons: It's free; It lets you get more done 
+	    		in less time; All of its functions are cross-browser compatible.</p>
+	    	</li>
+	    	<li><h2>Which is harder to learn: jQuery or JavaScript?</h2>
+	    		<p class="hidden">For most functions, jQuery is significantly easier to learn 
+			    and use than JavaScript. But remember that jQuery is JavaScript.</p>
+	    	</li>
+	    </ul>        
+	</section>
+</body>
+</html>

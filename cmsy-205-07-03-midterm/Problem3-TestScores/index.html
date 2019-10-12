@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test Score Array</title>
+    <link rel="stylesheet" href="styles.css" />
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+    <script src="test_scores.js"></script>
+</head>
+    <!--
+
+Problem-3: Use Test Score Arrays (25 points)
+
+In this problem, you start with the declarations for two arrays, a names array and a scores array.  Then, you’ll add the event handlers that display data that’s in those arrays.
+
+TestScoreArrays.gif
+
+Open the HTML and JavaScript files provided as startup files.  If you run the application, you can enter a name and score and then click the Add to Array button to add them to the arrays, but you can’t use the other two buttons to display the results.
+Look at the JavaScript code to see that it starts with the declarations for two arrays that contain four elements each.  The first is an array of names.  The second is an array of scores.
+Add an event handler for the click event of the Show Best Score button.  This handler should determine the highest score and display the name of the student who got that score along with the score in the text area below the Results heading, as shown above.
+Add an event handler for the List Array button.  This handler should list the names and scores of the elements in the array in the text area below the Results heading in this format:
+Ben, 88
+Joel, 98
+
+Add one or more names and scores to the arrays by entering the data and clicking on the Add to Array button.  Then, test the List Array and Show Best Score buttons to make sure they still work.
+Modify the event handler for the Add to Array button so the data in the Results text area is cleared after a name and score are added to the arrays.
+
+-->
+<body>
+<section>
+    <h1>Use a Test Score array</h1>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br>
+        
+    <label for="score">Score:</label>
+    <input type="text" id="score"><br>
+    
+    <label>&nbsp;</label>
+	<input type="button" id="add" value="Add to Array"><br>
+
+    <h2>Results</h2>
+    <textarea id="results">&nbsp;</textarea><br>
+    <input type="button" id="list_array" value="List Array"><br>
+	<input type="button" id="show_best" value="Show Best Score"><br>
+</section>
+</body>
+</html>
