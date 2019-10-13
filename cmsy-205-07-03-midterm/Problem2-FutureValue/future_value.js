@@ -9,7 +9,8 @@ function clearRate() {
 var calculateClick = function () {
     var investment = parseFloat( $("investment").value );
     var annualRate = parseFloat( $("rate").value );
-    var years = parseInt( $("years").value );
+    var months = parseInt( $("months").value );
+    
 if (isNaN(investment) || investment < 100 || investment > 100000) {
 		document.getElementById("investError").innerHTML = "Must be an integer from 100 - 100,000.";
 	} 
@@ -18,18 +19,21 @@ if (isNaN(investment) || investment < 100 || investment > 100000) {
         document.getElementById("investError").innerHTML = "";
  
 	}
-	else if(isNaN(years) || years < 1 || years > 50) {
-		document.getElementById("yearsError").innerHTML = "Must be an integer from 1 - 50.";
+	else if(isNaN(months) || months < 1 || months > 50) {
+		document.getElementById("monthsError").innerHTML = "Must be an integer from 1 - 50.";
         document.getElementById("rateError").innerHTML = "";
 	}
 	// if all entries are valid, calulate future value
 	else {
+         //var monthlyRate = annualRate / 12;
+        //var months = years * 12;
 		futureValue = investment;
-		for ( i = 1; i <= years; i++ ) {
+		for ( i = 1; i <= months; i++ ) {
+            annualRate = (annualRate/12)*months;
 			futureValue += futureValue * annualRate / 100;
 		}
 		$("future_value").value = futureValue.toFixed();
-        document.getElementById("yearsError").innerHTML = "";
+        document.getElementById("monthsError").innerHTML = "";
 	} 
 }
 window.onload = function () {
