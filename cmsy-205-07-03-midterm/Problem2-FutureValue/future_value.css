@@ -16,9 +16,11 @@ label {
 	float: left;
     width: 10em;
     text-align: right;
-    padding-bottom: .5em;
+   /* padding-bottom: .5em;*/
 }
 input {
     margin-left: 1em;
     margin-bottom: .5em;
 }
+
+span{display:block;min-height:20px;color:red;text-align:center;}
