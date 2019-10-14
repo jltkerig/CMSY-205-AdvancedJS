@@ -3,7 +3,7 @@
 var names = ["Ben", "Joel", "Judy", "Anne"];
 var scores = [88, 98, 77, 88];
 var textDisplay;
-var moreScores = 0
+ 
 
 var $ = function (id) { 
 	return document.getElementById(id); 
@@ -23,7 +23,8 @@ var addElement = function () {
     names[names.length] = $("name").value;
     scores[scores.length] = parseInt($("score").value);
        clearInputs();
-       //moreScores = 1;
+        clearResults();
+     
 	}
  $("name").focus();
 }
@@ -46,23 +47,10 @@ var clearInputs = function() {
 var clearResults = function() {
 	document.getElementById("results").value = "";
 };    
- //names.join("  ") + scores.join(" ");
- //}
+ 
 
 function show_best() {
-    //check to see if added new scores to array
-   /* if (moreScores == 1){
-     clearResults();
-     moreScores = 0;
-    //get new scores//
-        console.log(scores);
-        var highest = Math.max.apply(Math, scores);
-        document.getElementById("results").value ="Best Score is " + highest;
-    }
-    else {
-        console.log(scores);
-        var highest = Math.max(parseInt(scores));
-        document.getElementById("results").value ="Best Score is " + highest;}*/
+    
     //find position of highest score, use it to find position of name in array = post score and name when done
     var highest = Math.max.apply(Math, scores);
     var nameCompare = scores.indexOf(highest);
