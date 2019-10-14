@@ -22,8 +22,8 @@ var addElement = function () {
 	else {
     names[names.length] = $("name").value;
     scores[scores.length] = parseInt($("score").value);
-       clearInputs();
-        clearResults();
+    clearInputs();
+    clearResults();
      
 	}
  $("name").focus();
