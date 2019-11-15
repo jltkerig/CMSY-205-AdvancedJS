@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Placeholders</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="navigation.js"></script>
+</head>
+<!--
+In this exercise, you’ll modify an application that contains links that let you jump to placeholders so only the text associated with the current placeholder is displayed.
+
+Open the HTML and JavaScript files provided as start up files (index.html and navigation.js).  Then, run the application and notice that when you click on a link in the sidebar, the page is scrolled so the information for the speaker associated with that link is displayed. In other words, this application works even if JavaScript is disabled.
+
+In the JavaScript file, add an event handler for the ready event method. Then, within the function for that event handler, add jQuery code that hides the heading and article for all but the first speaker.
+
+Add an event handler for the click event of the <a> elements in the sidebar. Then, within the function for that event handler, add jQuery code that hides all the speaker information, gets the value of the href attribute of the link that was clicked, and then uses that value to display the heading and article for the speaker associated with that link.
+
+-->
+<body>
+	<header>
+		<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+		<hgroup>
+			<h1><a id="top">San Joaquin Valley Town Hall</a></h1>
+			<h2>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h2>
+		</hgroup>
+	</header>
+<section>
+        
+        <article class="active">	
+		<h1 name="toobin"><a id="toobin">The Supreme Nine: Black Robed Secrets</a></h1>
+		
+			<img src="images/toobin_court.jpg" alt="Jeffrey Toobin">
+			<h2>October<br>Jeffrey Toobin</h2>
+			<p>Author of the critically acclaimed best seller, The Nine: Inside the Secret World of the Supreme Court, Jeffrey Toobin brings the inside story of one of America's most mysterious 
+			and powerful institutions to the Saroyan stage. At the podium, Toobin is an unbiased, deeply 
+			analytic expert on American law, politics and procedure and he provides a unique look into the inner workings of the Supreme Court and its influence.</p>
+			<p>Inside the Secret World of the Supreme Court was published by Doubleday and spent more than four months on the NY Times best-seller list, earning Toobin the 2008 J. Anthony Lukas Prize  for Nonfiction from the Columbia Graduate School of Journalism. Toobin has also written several other best-selling books, including A Vast Conspiracy: The Real Story of the Sex Scandal that 
+			Nearly Brought Down a President; The Run of His Life: The People vs. O.J. Simpson; and Too Close to Call: The 36-Day Battle to Decide the 2000 Election.</p>
+			<p>Jeffrey Toobin joined CBB from ABC News, where, during his six-year tenure as a legal analyst, 
+			he provided legal views on the nation's most provocative and high profile cases, including the O.J. 
+			Simpson civil trial and the Kenneth Starr investigation of the Clinton White House. Toobin 
+			received a 2001 Emmy Award for his coverage of the Elian Gonzales custody saga.</p>
+			<p>Toobin is a staff writer at The New Yorker and has been covering legal affairs for the magazine 
+			since 1993. He has written articles on such subjects as Attorney General John Ashcroft, the 2001 
+			dispute over Florida's votes for president, the Paula Jones sexual harassment case, and Supreme 
+			Court Justice Clarence Thomas.</p>
+			<p>Currently a senior analyst for CNN Worldwide, Toobin is based in the network's New York bureau. 
+			He graduated from Harvard magna cum laude with a Bachelor of Arts degree in 1982 and earned a 
+			Truman scholarship. He is also a 1986 magna cum laude graduate of Harvard Law School, where he 
+			was an editor of the Harvard Law Review.</p>
+			<p><a href="#top">Back to top</a></p>
+		</article>
+        <article>
+		<h1><a id="sorkin">The Politics of <em>Too Big to Fail</em></a></h1>
+	
+			<img src="images/sorkin_desk260.jpg" alt="Andrew Ross Sorkin"/>
+			<h2>November<br>Andrew Ross Sorkin</h2>
+			<p><em>New York Times</em> columnist and author, Andrew Ross Sorkin, 
+			has been described as &ldquo;the most famous financial journalist of his generation.&rdquo;  
+			A leading voice on Wall Street and corporate America, his <em>New York Times</em> bestseller, 
+			<em>Too Big to Fail: The Inside Story of How Wall Street and Washington Fought to Save 
+			the Financial System—and Themselves</em>, was the first true, behind-the-scenes, 
+			moment-by-moment account of how that financial crisis developed into a global tsunami.</p>
+			<p><em>The Economist</em>, <em>The Financial Times</em> and <em>Business Week</em> all named 
+			<em>Too Big To Fail</em> one of the best books of the year.  The book was published by 
+			Viking October 20, 2009. The book was adapted as a movie by HBO Films and premiered on HBO on 
+			May 23, 2011. The film was directed by Curtis Hanson</p>
+			<p>and the screenplay was written 
+			by Peter Gould.The cast included William Hurt as Hank Paulson, the Treasury Secretary; 
+			Paul Giamatti as Ben Bernanke, the chairman of the Federal Reserve; Billy Crudup as 
+			Timothy Geithner; and Edward Asner as Warren Buffett.</p>
+			<p><em>Too Big to Fail</em> won the 2010 Gerald Loeb Award for best business book of the year, 
+			was a finalist for the 2010 <em>Financial Times</em> and Goldman Sachs Business Book of the Year 
+			Award, and was on <em>The New York Times</em> Best Seller list (non-fiction hardcover and paperback) 
+			for six months.</p>
+			<p>Sorkin is a regular guest host of CNBC’s <em>Squawk Box</em> and appears frequently on MSNBC's 
+			<em>Morning Joe</em>.  He has appeared on many other programs, including <em>Meet the Press</em>, 
+			<em>Good Morning America</em>, <em>The Daily Show</em> with Jon Stewart, and <em>Charlie Rose</em>.</p>
+			<p>Andrew Sorkin graduated from Scarsdale High School in 1995 and earned a Bachelor of Science 
+			degree from Cornell University in 1999.  Additional accolades for Andrew Sorkin include winning a 
+			Society of American Business Editors and Writers Award for breaking news in 2005 and again in 2006.  
+			In 2007, the World Economic Forum named him a Young Global Leader.</p>
+			<p><a href="#top">Back to top</a></p>			
+		</article>	
+        <article>
+		<h1><a id="chua">Babylon to Beijing: Risks and Rewards of Global Dominance</a></h1>		
+	
+			<img src="images/chua_220.jpg" alt="Amy Chua" width="145" />
+			<h2>January<br>Amy Chua</h2>
+			<p>Amy Chua joined the Yale faculty in 2001 after teaching at Duke Law School. 
+			Prior to starting her teaching career, she was a corporate law associate at Cleary, Gottlieb, 
+			Steen &amp; Hamilton. Her expertise is in international business transactions, law and 
+			development, ethnic conflict, and globalization and the law.</p>
+			<p>Born in Champaign, Illinois, Amy Chua's parents were ethnic Chinese from the Philippines 
+			before immigrating to the United States. Amy's father, Leon O. Chua, is known as  father of 
+			the nonlinear circuit theory and cellular neural networks. Amy Chua graduated magna cum laude 
+			with an A. B. </p>
+			<p>in Economics from Harvard College in 1984. 
+			She obtained her J. D. cum laude in 1987 from Harvard Law School.</p>
+			<p>Chua's first book, <em>World on Fire: How Exporting Free Market Democracy Breeds Ethnic 
+			Hatred and Global Instability </em>was a <em>New York Times</em> bestseller, and was selected 
+			by both <em>The Economist</em> and the U. K.'s <em>Guardian</em> as one the the Best Books of 
+			2003. Her second book, <em>Day of Empire: How Hyperpowers Rise to Global Dominance- and Why 
+			They Fall</em>, was a critically acclaimed Foreign Affairs bestseller.</p>
+			<p>This Yale academic was catapulted into the public spotlight in 2011 with publication of 
+			the<em> NY Times</em> bestseller, <em>Battle Hymn of the Tiger Mother</em>, a memoir 
+			exploring strict parenting the &ldquo;Chinese Way&rdquo; as compared to more lenient western 
+			parenting models.</p>
+			<p><a href="#top">Back to top</a></p>			
+		</article>
+        <article>
+		<h1><a id="sampson">Fossil Threads in the Web of Life</a></h1>
+		
+			<img src="images/sampson_dinosaur.jpg" alt="Scott Sampson">
+			<h2>February<br>Scott Sampson</h2>
+			<p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, 
+			armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum of 
+			Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution 
+			of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.</p>
+		    <p>Scott Sampson is a Canadian-born paleontologist who received his Ph.D. in zoology from the 
+		    University of Toronto. His doctoral work focused on two new species of ceratopsids, or horned dinosaurs, 
+		    from the Late Cretaceous of Montana, as well as the growth and function of certopsid horns and frills.</p>
+	        <p>Following graduation in 1993, Sampson spent a year working at the American Museum of Natual History 
+	        in New York City, followed by five years as assistant professor of anatomy at the New York College of 
+	        Osteopathic Medicine on Long Island. He arrived at the University of Utah accepting a dual position as 
+	        assistant professor in the Department of Geology and Geophysics and curator of vertebrate paleontology 
+	        at the Utah Museum of Natural History. His research interests largely revolve around the phylogenetics, 
+	        functional morphology, and evolution of Late Cretaceous dinosaurs.</p>
+	        <p>In addition to his museum and laboratory-based studies, Sampson has conducted paleontological work 
+	        in Zimbabwe, South Africa, and Madagascar, as well as the United States and Canada. He was also the 
+	        on-the-air host for the Discovery Channel's Dinosaur Planet and recently completed a book, 
+	        <em>Dinosaur Odyssey: Fossil Threads in the Web of Life</em>, which is one of the most comprehensive 
+	        surveys of dinosaurs and their worlds to date.</p>
+			<p><a href="#top">Back to top</a></p>	        
+		</article>
+
+</section>
+    
+	<aside>
+		<h1 id="speakers">This Year's Speakers</h1>
+		<nav id="nav_list">
+			<ul>
+				<li><a href="#toobin">October<br>Jeffrey Toobin</a></li>
+				<li><a href="#sorkin">November<br>Andrew Ross Sorkin</a></li>
+				<li><a href="#chua">January<br>Amy Chua</a></li>
+				<li><a href="#sampson">February<br>Scott Sampson</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<footer>
+		<p>&copy; 2012, San Joaquin Valley Town Hall, Fresno, CA 93755"</p>
+	</footer>
+</body>
+</html>
+
+

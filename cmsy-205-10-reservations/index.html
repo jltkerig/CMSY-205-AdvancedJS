@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reservation request</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="reservation.js"></script>
+</head>
+	<!-- 
+In the JavaScript file, notice that the ready function contains the declaration for a variable named emailPattern that contains the pattern that will be used to validate the email address.
+
+Code a statement that adds a span element with the class “error” and the value “*” after each text box.  
+
+Code a statement that moves the focus to the Arrival date text box.
+
+Code an event handler for the submit event of the form.
+
+This event handler should validate the user entries and cancel the submission of the form if any of the entries are invalid.
+
+The validation is as follows:
+
+A value must be entered into each text box.
+
+The number of nights must be numeric.
+
+The email address must match the pattern that’s provided.
+
+-->
+<body>
+	<h1>Reservation Request</h1>
+	<form action="response.html" method="get"
+    	name="reservation_form" id="reservation_form">
+		<fieldset>
+        	<legend>General Information</legend>
+        	<label for="arrival_date">Arrival date:</label>
+        	<input type="text" name="arrival_date" id="arrival_date" autofocus><br>
+        	<label for="nights">Nights:</label>
+        	<input type="text" name="nights" id="nights"><br>
+        	<label>Adults:</label>
+        	<select name="adults" id="adults">
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>        		        		        		
+        	</select><br>
+        	<label>Children:</label>
+        	<select name="children" id="children">
+        		<option value="0">0</option>
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>        		        		        		
+        	</select><br>        	
+		</fieldset>
+		<fieldset>
+        	<legend>Preferences</legend>
+        	<label>Room type:</label>
+			<input type="radio" name="room" id="standard" class="left" checked>Standard&nbsp;&nbsp;&nbsp;	        	
+			<input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="room" id="suite" class="left last">Suite<br>
+        	<label>Bed type:</label>
+			<input type="radio" name="bed" id="king" class="left" checked>King&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="bed" id="double" class="left last">Double Double<br>
+			<input type="checkbox" name="smoking" id="smoking">Smoking<br>
+		</fieldset>		
+		<fieldset>
+    		<legend>Contact Information</legend>
+    		<label for="name">Name:</label>
+			<input type="text" name="name" id="name"><br>
+        	<label for="email">Email:</label>
+        	<input type="text" name="email" id="email"><br>
+			<label for="phone">Phone:</label>
+			<input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
+		</fieldset>
+
+		<input type="submit" id="submit" value="Submit Request"><br>
+
+	</form>
+</body>
+</html>

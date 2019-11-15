@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Pull Quotes</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="pull_quotes.js"></script>
+</head>
+<!-- 
+Review the HTML and notice the span elements that are included in two of the paragraphs. Also notice that the text of the first span element doesn’t start with a capital letter.
+
+Add jQuery that gets the text of each span element so it can be used for the pull quotes. 
+
+Then, add a blockquote element for each quote that contains a <q> element with the quote.
+
+?????what q tag??? 
+
+The blockquote element should be added after the <p> element that contains the span element.
+
+Notice that the first pull quote starts with a lowercase letter. Then, use string manipulation to make sure that the first letter of each quote is uppercase.
+
+Code a statement that adds CSS properties to the blockquote element so the pull quotes look like the ones shown above.
+-->
+<body>   
+<section>  
+    <h1>Murach&rsquo;s HTML5 and CSS3</h1>
+    <p id="author">By Zak Ruvalcaba and Anne Boehm</p>
+  <article>
+		<p>HTML5 and CSS3 are changing how web pages are developed in some exciting new ways! 
+		The trick is learning how to use this new functionality as quickly, as easily, and as 
+		sensibly as possible.</p>
+ 
+		<p>That's where this book comes in. Whether you're new to web development...or whether  you're an experienced web developer who's been frustrated by the slow pace and gaping 
+		holes in the other training you've tried...this book was written for YOU.</p>
+
+		<h2>Get going fast</h2>
+		<p>In just the first 6 chapters of this book, you'll learn more about web development than you can from most full books.</p>
+		<p>It's true! In fact, <span>by the end of the crash course in Section 1, you'll be developing web pages the way today's best professionals do.</span>
+		That means you'll be using HTML5 semantic elements to mark up the structure of the 
+		content on the page and CSS to format and lay out that content.</p>
+		<p>If you're new to the subject, you'll see why you need to use floating and the CSS box model right from the start. If you've used earlier editions of CSS, you'll be amazed at how easily CSS3 lets you create pages with text and box shadows, rounded corners, gradients… all without having to spend time on custom images for each effect!</p>
+
+		<h2>But that's just the beginning</h2>
+		<p>In Section 2, you'll see how to refine your web pages with the features that users 
+		expect today. That includes:</p>
+		<ul>
+			<li>Providing attractive forms, with built-in data validation that doesn't require  the use of JavaScript the way it used to</li>
+            <li>Ensuring that elements like links and images work in an intuitive way</li>
+            <li>Adding audio and video clips to your pages</li>
+            <li>Formatting your web content for easy printing</li>
+            <li class="last">And more!</li>
+		</ul>
+
+		<h2>Where JavaScript and jQuery fit in</h2>
+		<p><span>Using JavaScript code, you can provide the special effects that are so engaging to web  site visitors.</span> At one time, you had to be a JavaScript expert to do the coding yourself.</p> 
+		<p>But today, you can take advantage of the many ready-to-use JavaScript routines that are available on the web...especially those in the popular jQuery libraries.</p>
+      <p>So Section 3 in this book gets you started. It shows you how to:</p>
+		<ul>
+			<li>use tested JavaScript code to enhance your web pages with features like image 
+			rollovers, image swaps, and slide shows</li>
+			<li>use jQuery to enhance your web pages with features like accordions, carousels, and  popup boxes</li>
+			<li>use jQuery Mobile to develop web pages for mobile devices with the look and feel of native applications</li>
+			<li class="last">start using the HTML5 features that require the use of JavaScript, like embedded fonts,  geolocation, and canvas</li>
+		</ul>
+		<p>You're still going to want to know some JavaScript so that you can tweak the code to suit  your needs. When you're ready to learn that, please see our JavaScript book.</p>
+
+		<h2>Design and deployment</h2>
+		<p>Finally, Section 4 rounds out your skills with chapters on web design and deployment.</p>
+		<p>Once you have a good grasp of how to develop web pages, you can understand the kinds of decisions you have to make in designing a site, and chapter 17 shows you how to do that using today's best practices. Then, chapter 18 shows how to deploy your site on a web  server and how to get the site indexed on the major search engines and directories.</p>
+ </article>
+</section>
+</body>
+</html>
