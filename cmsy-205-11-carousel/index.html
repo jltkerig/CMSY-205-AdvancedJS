@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel with bxSlider</title>
+    <!-- Normal style sheet used for layout and general formatting. -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <!-- Reference to the bxSlider plugin. -->
+    <script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+    <!-- Call to the bxSlider function. -->
+    <script type="text/javascript">
+    	$(document).ready(function() {
+        	$("#slider").bxSlider({
+        		displaySlideQty: 1,
+        		moveSlideQty: 1,
+                randomStart: true,
+                captions: true,
+                pager:true,
+                pagerType: 'short',
+                pagerSelector: '#pager',
+                captionsSelector: '#caption'
+                
+                
+        		}
+        	);
+    	});
+    </script>
+</head>
+<!--
+https://bxslider.com/options/
+Modify the jQuery code that calls the bxSlider plugin so the first image that’s displayed is selected randomly. To do that, you can use the "randomStart" option.
+
+Modify the code that calls the bxSlider plugin so that only one image is displayed at a time. Then, add options that provide for displaying a caption above the image. This caption is taken from the title attribute of the image, and it should be displayed in the paragraph with the id of “caption” that’s above the list of images.
+
+Add options to the code that calls the bxSlider plugin so a pager is displayed in the format shown above. This pager should be displayed in the paragraph with the id of “pager” that’s below the list of images.
+--->
+<body>
+    <section>
+        <h1>About Us</h1>
+        <p>On June 6th, 2012, Vecta Corp. moved into its new 4 story, 35,000 square foot facilty. Below are a few pictures of the new facility.</p>
+		<p id="caption"></p>
+        <ul id="slider">
+            <li><img src="images/building_01_thumb.jpg" title="Front of building" width="200"></li>
+            <li><img src="images/building_02_thumb.jpg" title="Left side of building" width="200"></li>
+            <li><img src="images/building_03_thumb.jpg" title="Rear of building" width="200"></li>
+            <li><img src="images/building_04_thumb.jpg" title="Offices" width="200"></li>
+            <li><img src="images/building_05_thumb.jpg" title="Conference room" width="200"></li>
+        </ul>
+        <p id="pager"></p>
+    </section>
+</body>
+</html>
