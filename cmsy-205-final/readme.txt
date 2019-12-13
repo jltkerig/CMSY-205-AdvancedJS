@@ -4,7 +4,7 @@ Problem-1: Modify the FAQs Application to display just one answer at a time (25 
 
 In this problem, you’ll modify a FAQs application so only one answer can be displayed at a time.  Also, when the page is loaded, the answer to the first question should be displayed.  To make these modifications, you can use some of the filtering methods in figure 9-11.
 
-(https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/FAQsApplication.jpg)
+![img](https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/FAQsApplication.jpg)
 
 Open the HTML (index.html) and JavaScript (faqs.js) files provided in the "faqs" sub-folder in the Startup Zip folder.  This is the FAQs application from chapter 8.  Now, run this application to refresh your memory about how it works. Then, review the HTML and JavaScript code for this application.
 
@@ -19,7 +19,7 @@ Problem-2: Use Plugins to Validate a Form (25 points)
 
 In this problem, you’ll use the validation plugin and the additional-methods plugin to validate a reservation request form.
 
-(https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/ReservationForm.jpg)
+![img](https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/ReservationForm.jpg)
 
 Open the HTML (index.html) and JavaScript (reservation.js) files provided in the "reservation_validation" sub-folder in the Startup Zip folder.  Then, run the application and click the Submit Request button to see the page that’s displayed when the form is submitted to the server.
 
@@ -33,7 +33,7 @@ Problem-3: Create a Rollover Plugin (25 points)
 
 In this problem, you’ll create a plugin that displays a different image when the mouse is rolled over an image in a list of images.
 
-(https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/RolloverPlugin.jpg)
+![img](https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/RolloverPlugin.jpg)
 
 Open the HTML (index.html) and JavaScript (rollover.html) files provided in the "image_rollover" sub-folder in the Startup Zip folder.  Now, run this application to refresh your memory about how it works.
 
@@ -49,7 +49,7 @@ Problem-4: Use Widgets in a Form (25 points)
 
 In this problem, you’ll modify a Reservation application so it uses Tabs, Datepicker, and Dialog widgets.
 
-(https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/ReservationUsingWidgets.jpg)
+![img](https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/ReservationUsingWidgets.jpg)
 
 Open the HTML (index.html) and JavaScript (reservation.js) files provided in the "reservation" sub-folder in the Startup Zip folder.  Now, run this application to see what the user interface looks like.
 
@@ -64,7 +64,7 @@ Problem-5: Create Draggable and Droppable Task Assignment Lists (25 points)
 
 In this problem, you will create task lists for two employees. Each task in the lists can be dragged from one list and dropped into the other list.
 
-(https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/Draggable-Droppable.jpg)
+![img](https://github.com/jltkerig/CMSY-205-AdvancedJS/blob/master/cmsy-205-final/Draggable-Droppable.jpg)
 
 Open the HTML (index.html) file provided in the "task_assignments" sub-folder in the Startup Zip folder.  Then, review the HTML in this file. Note that each task list is represented by a div element that contains a div element for each task. Also note that the div element for each task has a class of “ui-state-default”.
 
