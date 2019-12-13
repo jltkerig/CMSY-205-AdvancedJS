@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task Management</title>
+    <!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
+    <link href="css/smoothness/jquery-ui-1.8.23.custom.css" type="text/css" rel="stylesheet">
+	<!-- Normal style sheet used for layout and general formatting. -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <!-- jQuery UI JavaScript library reference. -->
+    <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+</head>
+	
+<body>
+	<section>
+		<h2>Task List by Employee</h2>
+		<div id="left">
+		    <h3>Kelly</h3>
+		    <div id="employee1">
+		      	<div class="ui-state-default"><p>Manage office personnel</p></div>
+		        <div class="ui-state-default"><p>Process payables</p></div>          		      	
+		        <div class="ui-state-default"><p>Process payroll</p></div>  		      	
+		    </div>
+		    <input type="button" id="add1" value="Add Task">
+       </div>
+       <div id="right">
+	        <h3>Estelle</h3>
+	        <div id="employee2" class="connectedSortable">
+	            <div class="ui-state-default"><p>Enter orders</p></div>     	        	
+	            <div class="ui-state-default"><p>Process invoices</p></div>     
+	        </div>
+		    <input type="button" id="add2" value="Add Task">
+        </div>       
+	</section>
+</body>
+</html>
