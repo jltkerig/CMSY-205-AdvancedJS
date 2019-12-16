@@ -13,24 +13,42 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <!-- jQuery UI JavaScript library reference. -->
     <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<!--
+Add jQuery code that responds to the click event of the Add Task button for the first employee.
 
-    <script>
+When this button is clicked, use the prompt method to get a description of the task. If a description is entered and the OK button is clicked, add a task to the end of the other tasks for the employee. 
+
+In addition, add code that makes the task you just added draggable.
+
+Add jQuery code that responds to the click event of the Add Task button for the second employee. This code should work like the code for the first employee.
+   
+   -->
+<script>
 $(document).ready(function() {
   $(".ui-state-default").draggable({
     cursor: "move",
     grid: [25, 34]
   });
 
-  $(".taskList").droppable({
-    drop: function(evt, ui) {
-      ui.draggable.css({
-        top: 0,
-        left: 0
-      });
-      $(this).append(ui.draggable);
-    }
-  });
+ 	$("#add1").click(function() {
+    var item1 = prompt ("What task would you like to give Kelly?");
+    $('#employee1').append('<div class="ui-state-default"><p>'+item1+'</p></div>');
+			$("div.ui-state-default").draggable({
+  				cursor: "move",
+  				grid: [25, 34]
+  			});
 });
+	
+$("#add2").click(function(){
+    var item2 = prompt ("What task would you like to give Estelle?");
+    $('#employee2').append('<div class="ui-state-default"><p>'+item2+'</p></div>');
+		$("div.ui-state-default").draggable({
+  				cursor: "move",
+  				grid: [25, 34]
+  			});
+});
+	
+	});//end
     </script>
 </head>
 	
