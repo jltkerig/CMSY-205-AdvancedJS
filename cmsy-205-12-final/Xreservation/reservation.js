@@ -1,4 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function() {	 
+$("#arrival_date").datepicker();
+$( "#dialog" ).dialog({ 
+	autoOpen: false,
+	modal: true,
+    draggable: false,
+    resizable: false,
+	width: 400,
+
+					  });
+	
+$( "#policies" ).click(function() {
+  $('#dialog').dialog('open');
+});
+	//tabs function
+	$("#reservation_tabs").tabs();
 	var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
 		
 	// add a span element after each text box
@@ -14,7 +29,7 @@ $(document).ready(function() {
 			var isValid = true;
 			
 			// validate the requested arrival date
-			if ($("#arrival_date").val() == "") {
+			if ($("#arrival_date").val() === "") {
 				$("#arrival_date").next().text("This field is required.");
 				isValid = false;
 			} else {
@@ -22,18 +37,7 @@ $(document).ready(function() {
 			}
 			
 			// validate the number of nights
-			var nights = $("#nights").val();
-			if (nights == "") {
-				$("#nights").next().text("This field is required.");
-				isValid = false;
-			} else if (isNaN(nights)) {
-				$("#nights").next().text("This field must be numeric.");
-				isValid = false;
-			} else {
-				$("#nights").next().text("");
-			}
-						
-			if ($("#nights").val() == "") {
+			if ($("#nights").val() === "") {
 				$("#nights").next().text("This field is required.");
 				isValid = false;
 			} else if (isNaN($("#nights").val())) {
@@ -41,11 +45,11 @@ $(document).ready(function() {
 				isValid = false;
 			} else {
 				$("#nights").next().text("");
-			}
+			}		
 
 			// validate the name entry
 			var name = $("#name").val().trim();
-			if (name == "") {
+			if (name === "") {
 				$("#name").next().text("This field is required.");
 				isValid = false;
 			} 
@@ -56,7 +60,7 @@ $(document).ready(function() {
 						
 			// validate the email entry with a regular expression
 			var email = $("#email").val();
-			if (email == "") { 
+			if (email === "") { 
 				$("#email").next().text("This field is required.");
 				isValid = false;
 			} else if ( !emailPattern.test(email) ) {
@@ -67,7 +71,7 @@ $(document).ready(function() {
 			} 
 			
 			// validate the phone number
-			if ($("#phone").val() == "") { 
+			if ($("#phone").val() === "") { 
 				$("#phone").next().text("This field is required.");
 				isValid = false; 
 			} else {
@@ -75,7 +79,7 @@ $(document).ready(function() {
 			}
 			
 			// prevent the submission of the form if any entries are invalid 
-			if (isValid == false) {
+			if (isValid === false) {
 				event.preventDefault();				
 			}
 		} // end function
